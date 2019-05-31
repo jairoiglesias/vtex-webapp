@@ -52,7 +52,7 @@ class App extends React.Component {
         {name: 'OK', phone: 'Tenis Nike Tam 38', email: '13', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
-        {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
+        
       ]
     }
     
@@ -79,9 +79,9 @@ class App extends React.Component {
             contacts: [
               {name: 'OK', phone: 'Cama Box King', email: '10', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Tenis Nike Tam 38', email: '13', statusNegotiation: 'Reportar Atraso'},
-              {name: 'OK', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
+              // {name: 'OK', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
             ]
           })   
 
@@ -92,9 +92,9 @@ class App extends React.Component {
             contacts: [
               {name: 'OK', phone: 'Cama Box King', email: '10', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Tenis Nike Tam 38', email: '13', statusNegotiation: 'Reportar Atraso'},
-              {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
               {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
+              {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
             ]
           })   
 
@@ -118,9 +118,9 @@ class App extends React.Component {
       contacts: [
         {name: 'OK', phone: 'Cama Box King', email: '10', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Tenis Nike Tam 38', email: '13', statusNegotiation: 'Reportar Atraso'},
-        {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Acionado'},
         {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
+        {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Acionado'},
       ]
     })
 
