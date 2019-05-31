@@ -62,7 +62,7 @@ class App extends React.Component {
 
       console.log('set interval ...')
     
-      let URL = 'http://vtex-api-dev.us-west-2.elasticbeanstalk.com/get_negotiation'
+      let URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/get_negotiation'
     
       fetch(URL)
       .then((response) => {
@@ -124,7 +124,7 @@ class App extends React.Component {
       ]
     })
 
-    const URL = 'http://vtex-api-dev.us-west-2.elasticbeanstalk.com/send_sms'
+    const URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/send_sms'
 
 
     let response =  await fetch(URL, {
