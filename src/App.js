@@ -166,6 +166,7 @@ class App extends React.Component {
         <table className='table'>
           <thead>
             <tr>
+              <th>Problema</th>
               <th>Status</th>
               <th>Produto</th>
               <th>Quantidade</th>
@@ -181,9 +182,22 @@ class App extends React.Component {
         // }
         return (<tr>
         <td style={contact.name == 'ATENÇÃO'? styles.buttonState2 : styles.buttonState1}>{contact.name}</td>
+        <td>
+          <select>
+            <option value="-1">
+              Selecione
+            </option>
+            <option value="0">
+              PICKU-UP
+            </option>
+            <option value="1">
+              TRANSPORTADORA
+            </option>
+          </select>
+        </td>
         <td style={{padding: '10px'}}>{contact.phone}</td>
         <td style={{padding: '10px'}}>{contact.email}</td>
-        <button style={{padding: '10px'}} onClick={() => this.handleButton(contact)}>{contact.statusNegotiation}</button>
+        <button style={{padding: '10px', margin: '5px', borderRadius: '10px', backgroundColor: '#5ebccc'}} onClick={() => this.handleButton(contact)}>{contact.statusNegotiation}</button>
         </tr>)
       })
     }
