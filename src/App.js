@@ -62,8 +62,9 @@ class App extends React.Component {
 
       console.log('set interval ...')
     
-      let URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/get_negotiation'
-    
+      // let URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/get_negotiation'
+      let URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/get_negotiation'
+      
       fetch(URL)
       .then((response) => {
         return response.json()
@@ -117,27 +118,30 @@ class App extends React.Component {
       filterText: '',
       contacts: [
         {name: 'OK', phone: 'Cama Box King', email: '10', statusNegotiation: 'Reportar Atraso'},
-        {name: 'OK', phone: 'Tenis Nike Tam 38', email: '13', statusNegotiation: 'Reportar Atraso'},
+        {name: 'OK', phone: 'Sofá Bege', email: '13', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
         {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Acionado'},
       ]
     })
 
-    const URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/send_sms'
+    // const URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/send_sms'
+    const URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/send_sms'
 
 
-    let response =  await fetch(URL, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        "message": "Olá! Aqui é da M & D!\nTemos uma proposta referente a sua encomenda!\nPodemos entregar no proximo dia util?\nCaso voce aceite te daremos 15% na sua compra!",
-        "phoneNumber": "+5511971801555"
-      })
-    })
+    // let response =  await fetch(URL, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({
+    //     "message": "Olá! Aqui é da M & D!\nTemos uma proposta referente a sua encomenda!\nPodemos entregar no proximo dia util?\nCaso voce aceite te daremos 15% na sua compra!",
+    //     "phoneNumber": "+5511971801555"
+    //   })
+    // })
+
+    let response = await fetch(URL)
 
     response = await response.text()
 
