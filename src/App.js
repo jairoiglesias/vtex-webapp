@@ -63,7 +63,8 @@ class App extends React.Component {
       console.log('set interval ...')
     
       // let URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/get_negotiation'
-      let URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/get_negotiation'
+      // let URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/get_negotiation'
+      // let URL = 'http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/get_negotiation'
       
       fetch(URL)
       .then((response) => {
@@ -112,7 +113,7 @@ class App extends React.Component {
     console.log('handleButton Invoked!')
     console.log(contact)
 
-    contact.statusNegotiation = 'Acionado !!!'
+    // contact.statusNegotiation = 'Acionado !!!'
     
     this.setState({
       filterText: '',
@@ -121,13 +122,13 @@ class App extends React.Component {
         {name: 'OK', phone: 'Sofá Bege', email: '13', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Cortina', email: '3', statusNegotiation: 'Reportar Atraso'},
         {name: 'OK', phone: 'Mesa', email: '20', statusNegotiation: 'Reportar Atraso'}, 
-        {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Acionado'},
+        {name: 'ATENÇÃO', phone: 'Cama Solteiro', email: '2', statusNegotiation: 'Reportar Atraso'},
       ]
     })
 
     // const URL = 'https://proxier.now.sh/http://vtex-api-dev.us-west-2.elasticbeanstalk.com/send_sms'
-    const URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/send_sms'
-
+    // const URL = 'https://proxier.now.sh/http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/send_sms'
+    const URL = 'http://hacka-vtex-webapi-dev.us-east-1.elasticbeanstalk.com/send_sms'
 
     // let response =  await fetch(URL, {
     //   method: 'POST',
@@ -204,7 +205,9 @@ class App extends React.Component {
         <button style={{padding: '10px', margin: '5px', borderRadius: '10px', backgroundColor: '#5ebccc'}} onClick={() => this.handleButton(contact)}>{contact.statusNegotiation}</button>
         </tr>)
       })
+
     }
+        <button style={{padding: '10px', margin: '5px', borderRadius: '10px', backgroundColor: '#5ebccc'}} onClick={() => this.handleButton()}>Atualizar</button>
         </table>
 
       </div>
